@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* Navigation */
+
+header {
+    border-bottom: 1px solid #eaeaea;
+    background: white;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links a:hover {
+    color: #777;
+}
+
+
+/* Main */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #666;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+.hero-image img {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* Buttons */
+
+.buttons {
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 12px 22px;
+    margin-right: 10px;
+
+    background: #222;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+}
+
+.button.secondary {
+    background: white;
+    color: #222;
+
+    border: 1px solid #222;
+}
+
+
+/* Sections */
+
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+/* Cards */
+
+.card {
+    border: 1px solid #e5e5e5;
+
+    padding: 25px;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 80px;
+    padding: 40px;
+
+    text-align: center;
+
+    border-top: 1px solid #eee;
+
+    color: #777;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+
+        text-align: center;
+
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
